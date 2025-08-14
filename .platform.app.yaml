@@ -1,0 +1,9 @@
+name: laravel-app
+php:
+  version: "8.0"
+
+build:
+  builder: "heroku/php"
+
+start:
+  command: "php artisan serve --host=0.0.0.0 --port=$PORT"
